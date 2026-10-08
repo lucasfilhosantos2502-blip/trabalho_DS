@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLT — O Futuro dos Seus Passos</title>
+  <meta name="description" content="Loja demonstrativa de tênis esportivos premium. Tecnologia, performance e estilo.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#top">
+        VOLT<span class="brand-dot">.</span>
+      </a>
+
+      <div class="nav-right d-flex align-items-center gap-2 ms-auto ms-lg-0 order-lg-3">
+        <a href="#destaques" class="btn btn-volt-primary d-none d-lg-inline-flex">Comprar agora</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse order-lg-2" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#top">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destaques">Tênis</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tecnologia">Tecnologia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="container hero-container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 hero-copy">
+          <span class="eyebrow">Coleção 2026</span>
+          <h1 class="hero-title">O futuro dos<br>seus passos.</h1>
+          <p class="hero-subtitle">Tênis que unem tecnologia de ponta, conforto absoluto e um design que não passa despercebido. Feito para quem se move rápido.</p>
+          <div class="hero-actions">
+            <a href="#destaques" class="btn btn-volt-primary btn-lg">Comprar agora</a>
+            <a href="#tecnologia" class="btn btn-volt-outline btn-lg">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 hero-visual">
+          <div class="shoe-stage">
+            <div class="shoe-stage-glow" aria-hidden="true"></div>
+            <div class="shoe-stage-ring" aria-hidden="true"></div>
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1200&q=80"
+                 alt="Tênis esportivo em rotação, apresentação 360 graus"
+                 class="hero-shoe-img" id="heroShoe">
+
+            <div class="tech-chip chip-1">
+              <i class="bi bi-feather"></i>
+              <div><span>Leveza</span><small>230g</small></div>
+            </div>
+            <div class="tech-chip chip-2">
+              <i class="bi bi-layers"></i>
+              <div><span>Amortecimento</span><small>Reativo</small></div>
+            </div>
+            <div class="tech-chip chip-3">
+              <i class="bi bi-lightning-charge"></i>
+              <div><span>Alta performance</span><small>Nível pro</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ DESTAQUES ============ -->
+  <section class="section-destaques" id="destaques">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Coleção</span>
+        <h2>Escolha seu próximo nível</h2>
+      </div>
+
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="corrida">Corrida</button>
+        <button class="filter-btn" data-filter="street">Street</button>
+        <button class="filter-btn" data-filter="basquete">Basquete</button>
+      </div>
+
+      <div class="row g-4" id="productGrid">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4 product-item" data-category="street">
+          <article class="product-card">
+            <div class="product-card-img">
+              <span class="product-tag">Novo</span>
+              <img src="https://images.unsplash.com/photo-1600185652960-c9d8869d015c?auto=format&fit=crop&w=800&q=80" alt="Tênis Air Max Pulse branco e vermelho">
+            </div>
+            <div class="product-card-body">
+              <div class="product-card-top">
+                <div>
+                  <span class="product-category">Street</span>
+                  <h3>Air Max Pulse</h3>
+                </div>
+                <div class="product-stars" aria-label="Avaliação 4.8 de 5">
+                  <i class="bi bi-star-fill"></i><span>4.8</span>
+                </div>
+              </div>
+              <p class="product-desc">Amortecimento visível e visual urbano de alto impacto.</p>
+              <div class="product-card-footer">
+                <span class="product-price">R$ 799</span>
+                <div class="product-actions">
+                  <button class="btn btn-volt-primary btn-sm">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4 product-item" data-category="basquete">
+          <article class="product-card">
+            <div class="product-card-img">
+              <img src="https://images.unsplash.com/photo-1658492572022-ecf972b354a0?auto=format&fit=crop&w=800&q=80" alt="Tênis vermelho estilo basquete">
+            </div>
+            <div class="product-card-body">
+              <div class="product-card-top">
+                <div>
+                  <span class="product-category">Basquete</span>
+                  <h3>Jordan Ignite</h3>
+                </div>
+                <div class="product-stars" aria-label="Avaliação 4.9 de 5">
+                  <i class="bi bi-star-fill"></i><span>4.9</span>
+                </div>
+              </div>
+              <p class="product-desc">Tração agressiva e resposta imediata em cada movimento.</p>
+              <div class="product-card-footer">
+                <span class="product-price">R$ 1.099</span>
+                <div class="product-actions">
+                  <button class="btn btn-volt-primary btn-sm">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4 product-item" data-category="street">
+          <article class="product-card">
+            <div class="product-card-img">
+              <img src="https://images.unsplash.com/photo-1679284392409-55f26c6ea7bc?auto=format&fit=crop&w=800&q=80" alt="Tênis preto Air Force Shadow">
+            </div>
+            <div class="product-card-body">
+              <div class="product-card-top">
+                <div>
+                  <span class="product-category">Street</span>
+                  <h3>Air Force Shadow</h3>
+                </div>
+                <div class="product-stars" aria-label="Avaliação 4.7 de 5">
+                  <i class="bi bi-star-fill"></i><span>4.7</span>
+                </div>
+              </div>
+              <p class="product-desc">Um clássico reinventado em preto absoluto.</p>
+              <div class="product-card-footer">
+                <span class="product-price">R$ 749</span>
+                <div class="product-actions">
+                  <button class="btn btn-volt-primary btn-sm">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-4 product-item" data-category="corrida">
+          <article class="product-card">
+            <div class="product-card-img">
+              <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" alt="Tênis de corrida em superfície geométrica">
+            </div>
+            <div class="product-card-body">
+              <div class="product-card-top">
+                <div>
+                  <span class="product-category">Corrida</span>
+                  <h3>Air Max 97</h3>
+                </div>
+                <div class="product-stars" aria-label="Avaliação 4.6 de 5">
+                  <i class="bi bi-star-fill"></i><span>4.6</span>
+                </div>
+              </div>
+              <p class="product-desc">Aerodinâmico, leve e construído para longas distâncias.</p>
+              <div class="product-card-footer">
+                <span class="product-price">R$ 899</span>
+                <div class="product-actions">
+                  <button class="btn btn-volt-primary btn-sm">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-6 col-lg-4 product-item" data-category="corrida">
+          <article class="product-card">
+            <div class="product-card-img">
+              <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=800&q=80" alt="Tênis branco em uso, corrida urbana">
+            </div>
+            <div class="product-card-body">
+              <div class="product-card-top">
+                <div>
+                  <span class="product-category">Corrida</span>
+                  <h3>React Infinity</h3>
+                </div>
+                <div class="product-stars" aria-label="Avaliação 4.9 de 5">
+                  <i class="bi bi-star-fill"></i><span>4.9</span>
+                </div>
+              </div>
+              <p class="product-desc">Estabilidade superior para treinos diários exigentes.</p>
+              <div class="product-card-footer">
+                <span class="product-price">R$ 959</span>
+                <div class="product-actions">
+                  <button class="btn btn-volt-primary btn-sm">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-6 col-lg-4 product-item" data-category="basquete">
+          <article class="product-card">
+            <div class="product-card-img">
+              <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80" alt="Tênis branco Air Zoom">
+            </div>
+            <div class="product-card-body">
+              <div class="product-card-top">
+                <div>
+                  <span class="product-category">Basquete</span>
+                  <h3>Air Zoom Elite</h3>
+                </div>
+                <div class="product-stars" aria-label="Avaliação 4.8 de 5">
+                  <i class="bi bi-star-fill"></i><span>4.8</span>
+                </div>
+              </div>
+              <p class="product-desc">Explosão e controle para decidir a partida.</p>
+              <div class="product-card-footer">
+                <span class="product-price">R$ 1.199</span>
+                <div class="product-actions">
+                  <button class="btn btn-volt-primary btn-sm">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUTO EM DESTAQUE ============ -->
+  <section class="section-featured" id="produto-principal">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <div class="featured-img-wrap">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=1200&q=85" alt="Air Zoom Elite, tênis em destaque" id="featuredImg">
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <span class="eyebrow">Produto em destaque</span>
+          <h2 class="featured-title">Air Zoom Elite</h2>
+          <div class="featured-rating" aria-label="Avaliação 4.8 de 5 estrelas">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            <span>4.8 (312 avaliações)</span>
+          </div>
+          <p class="featured-price">R$ 1.199</p>
+          <p class="featured-desc">Desenvolvido para atletas que exigem resposta imediata. Entressola reativa, cabedal respirável e tração multidirecional — para acelerar sem hesitar.</p>
+
+          <div class="option-block">
+            <span class="option-label">Cor</span>
+            <div class="color-options" id="colorOptions">
+              <button type="button" class="color-swatch swatch-white active" data-color="Branco" aria-label="Branco"></button>
+              <button type="button" class="color-swatch swatch-black" data-color="Preto" aria-label="Preto"></button>
+              <button type="button" class="color-swatch swatch-red" data-color="Vermelho" aria-label="Vermelho"></button>
+              <button type="button" class="color-swatch swatch-gray" data-color="Cinza" aria-label="Cinza"></button>
+            </div>
+          </div>
+
+          <div class="option-block">
+            <span class="option-label">Tamanho</span>
+            <div class="size-options" id="sizeOptions">
+              <button type="button" class="size-swatch" data-size="37">37</button>
+              <button type="button" class="size-swatch" data-size="38">38</button>
+              <button type="button" class="size-swatch active" data-size="39">39</button>
+              <button type="button" class="size-swatch" data-size="40">40</button>
+              <button type="button" class="size-swatch" data-size="41">41</button>
+              <button type="button" class="size-swatch" data-size="42">42</button>
+            </div>
+          </div>
+
+          <div class="featured-actions">
+            <button class="btn btn-volt-primary btn-lg">Comprar agora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECNOLOGIA ============ -->
+  <section class="section-tech" id="tecnologia">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Engenharia</span>
+        <h2>Tecnologia em cada passo</h2>
+        <p class="section-lead">Cada par da VOLT nasce de um processo que combina ciência do movimento, materiais avançados e testes com atletas de verdade. O resultado é um tênis que absorve o impacto, pesa quase nada e mantém o pé fresco e firme do primeiro ao último quilômetro, seja numa corrida de rua, numa quadra ou no dia a dia da cidade.</p>
+        <p class="section-lead">Conheça abaixo os seis pilares que sustentam a performance e o conforto de toda a coleção.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="tech-card">
+            <i class="bi bi-layers"></i>
+            <h3>Amortecimento</h3>
+            <p>Espuma reativa que absorve o impacto e devolve energia a cada passada.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="tech-card">
+            <i class="bi bi-feather"></i>
+            <h3>Leveza</h3>
+            <p>Materiais de última geração para um peso quase imperceptível.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="tech-card">
+            <i class="bi bi-wind"></i>
+            <h3>Respirabilidade</h3>
+            <p>Cabedal ventilado que mantém o pé seco em qualquer ritmo.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="tech-card">
+            <i class="bi bi-lightning-charge"></i>
+            <h3>Alta performance</h3>
+            <p>Resposta imediata, pensada para quem compete contra o próprio tempo.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="tech-card">
+            <i class="bi bi-hand-thumbs-up"></i>
+            <h3>Conforto</h3>
+            <p>Encaixe anatômico que acompanha o movimento natural do pé.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 reveal">
+          <div class="tech-card">
+            <i class="bi bi-shield-check"></i>
+            <h3>Durabilidade</h3>
+            <p>Solado de alta resistência, construído para durar temporadas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIÊNCIA ============ -->
+  <section class="section-experience" id="sobre">
+    <div class="container">
+      <p class="experience-eyebrow">Filosofia VOLT</p>
+      <h2 class="experience-title">Mais que um tênis.<br>Uma experiência.</h2>
+      <p class="experience-text">Cada detalhe é pensado para o momento em que você decide ir além. Performance e estilo não competem entre si — aqui, eles andam juntos.</p>
+    </div>
+  </section>
+
+  <!-- ============ OFERTA ============ -->
+  <section class="section-offer" id="contato">
+    <div class="container offer-box">
+      <h2>Seu próximo tênis está aqui.</h2>
+      <p>Conheça a coleção completa e encontre o par que combina com o seu ritmo.</p>
+      <a href="#destaques" class="btn btn-volt-primary btn-lg">Explorar coleção</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">VOLT<span class="brand-dot">.</span></span>
+          <p>Tecnologia, performance e estilo em cada passo.</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h4>Loja</h4>
+            <a href="#destaques">Tênis</a>
+            <a href="#tecnologia">Tecnologia</a>
+            <a href="#produto-principal">Destaque</a>
+          </div>
+          <div>
+            <h4>Empresa</h4>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+          </div>
+          <div>
+            <h4>Siga</h4>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://x.com/?lang=pt" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.youtube.com/" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <p> 2026 VOLT. Projeto demonstrativo e fictício, sem vínculo com a Nike ou qualquer marca oficial.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript personalizado -->
+  <script src="script.js"></script>
+</body>
+</html>
